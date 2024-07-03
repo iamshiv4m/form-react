@@ -1,22 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import DynamicForm from "./Component/DynamicForm";
+import formConfig from "./config/config";
 
 function App() {
+  const handleSubmit = (formData) => {
+    console.log("Form Data:", formData);
+  };
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Dynamic Form</h1>
+        <DynamicForm config={formConfig} onSubmit={handleSubmit} />
       </header>
     </div>
   );

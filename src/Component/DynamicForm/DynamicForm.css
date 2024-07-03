@@ -1,0 +1,73 @@
+/* DynamicForm.css */
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.form-field {
+  color: #3d3d3d;
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Radio button styles */
+.form-field .radio-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.form-field .radio-group label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  margin-right: 15px; /* Add space between radio options */
+}
+
+.form-field .radio-group input {
+  width: auto;
+  margin-right: 5px;
+}
+
+.submit-button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
